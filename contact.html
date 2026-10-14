@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us · Bookie</title>
+    <meta name="description" content="Get in touch with the Bookie team.">
+    <link rel="icon" href="Assets/Images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body data-nav="contact">
+    <site-header></site-header>
+
+    <main id="main">
+        <section class="page-bg page-bg-contact">
+            <div class="stack">
+                <div class="lead">
+                    <h1 class="section-title">Contact Us.</h1>
+                    <p>Contact us through this data and fill out this form</p>
+                </div>
+
+                <div class="contact-wrap">
+                    <div class="contact-info">
+                        <div class="contact-box">
+                            <div class="contact-icon"><i class="fas fa-location-dot" aria-hidden="true"></i></div>
+                            <div><h3>Address</h3><p>EGYPT, Ismailia</p></div>
+                        </div>
+                        <div class="contact-box">
+                            <div class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                            <div><h3>Phone</h3><p>20-1284125553</p></div>
+                        </div>
+                        <div class="contact-box">
+                            <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                            <div><h3>Email</h3><p>SCU_Bookie@gmail.com</p></div>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <h2>Send Message</h2>
+                        <form id="contactForm">
+                            <div class="field">
+                                <input id="name" type="text" required placeholder=" " autocomplete="name">
+                                <label for="name">Full name</label>
+                            </div>
+                            <div class="field">
+                                <input id="email" type="email" required placeholder=" " autocomplete="email">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="field">
+                                <textarea id="message" required placeholder=" "></textarea>
+                                <label for="message">Type your message...</label>
+                            </div>
+                            <button class="btn" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <site-footer></site-footer>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login · Bookie</title>
+    <meta name="description" content="Log in to Bookie (demo).">
+    <link rel="icon" href="Assets/Images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body data-nav="login">
+    <site-header></site-header>
+
+    <main id="main">
+        <section class="page-bg page-bg-auth">
+            <div class="panel auth-card">
+                <div class="auth-avatar" aria-hidden="true"><i class="fas fa-user"></i></div>
+                <h2>Login</h2>
+                <form id="authForm">
+                    <div class="field">
+                        <input id="email" type="email" required placeholder=" " autocomplete="email">
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="field">
+                        <input id="password" type="password" required minlength="7" placeholder=" " autocomplete="current-password">
+                        <label for="password">Password (7+ characters)</label>
+                    </div>
+                    <button class="btn" type="submit">Login</button>
+                </form>
+                <div class="auth-links">
+                    <p>Forgot password? <a href="help.html">Click here.</a></p>
+                    <p>Don’t have an account? <a href="signup.html">Sign up.</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <site-footer></site-footer>
+</body>
+
+</html>

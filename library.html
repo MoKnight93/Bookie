@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books · Bookie</title>
+    <meta name="description" content="Science, history and culture books at Bookie.">
+    <link rel="icon" href="Assets/Images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/data.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/catalog.js" defer></script>
+</head>
+
+<body data-nav="books" data-page="library">
+    <site-header></site-header>
+
+    <main id="main">
+        <section class="banner">
+            <div>
+                <h1>Books.</h1>
+                <p>Science, history and culture: explore the stories behind our world.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="filter"><input id="filter" type="search" placeholder="Filter books..." aria-label="Filter books"></div>
+            <div class="grid" id="grid"></div>
+        </section>
+    </main>
+
+    <site-footer></site-footer>
+</body>
+
+</html>

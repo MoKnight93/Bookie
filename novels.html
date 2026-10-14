@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novels · Bookie</title>
+    <meta name="description" content="Browse every novel in the Bookie collection.">
+    <link rel="icon" href="Assets/Images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/data.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/catalog.js" defer></script>
+</head>
+
+<body data-nav="books" data-page="novels">
+    <site-header></site-header>
+
+    <main id="main">
+        <section class="banner">
+            <div>
+                <h1>Novels.</h1>
+                <p>“The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.”</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="filter"><input id="filter" type="search" placeholder="Filter novels..." aria-label="Filter novels"></div>
+            <div class="grid" id="grid"></div>
+        </section>
+    </main>
+
+    <site-footer></site-footer>
+</body>
+
+</html>

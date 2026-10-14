@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookie</title>
+    <meta name="description" content="Bookie - Tranquility, Serenity & Culture. Discover the latest and most read books.">
+    <link rel="icon" href="Assets/Images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/data.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/catalog.js" defer></script>
+</head>
+
+<body data-nav="home" data-page="home">
+    <site-header></site-header>
+
+    <main id="main">
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Bookie.</h1>
+                <p class="tagline">Tranquility, Serenity &amp; Culture</p>
+                <p class="intro">
+                    It is both relaxing and invigorating to occasionally set aside the worries of life, seek the
+                    company of a friendly book… from the reading of ‘good books’ there comes a richness of life that
+                    can be obtained in no other way.
+                </p>
+                <div class="hero-actions">
+                    <a href="books.html" class="cta cta-primary">Start Reading</a>
+                    <a href="signup.html" class="cta cta-secondary">Sign Up</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="latest">
+            <h2 class="section-title">Latest Books.</h2>
+            <p class="section-subtitle">Take a look at what’s new.</p>
+            <div class="grid grid-3" id="latestGrid"></div>
+        </section>
+
+        <section class="section section-soft" id="popular">
+            <h2 class="section-title">The Most Read.</h2>
+            <p class="section-subtitle">The most read and searched books in our bookstore.</p>
+            <div class="shelf-wrap">
+                <button class="shelf-btn shelf-prev" id="shelfPrev" type="button" aria-label="Scroll left"><i class="fas fa-chevron-left"></i></button>
+                <div class="shelf" id="shelf" tabindex="0" aria-label="Most read books"></div>
+                <button class="shelf-btn shelf-next" id="shelfNext" type="button" aria-label="Scroll right"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="section section-rate" id="feedback">
+            <h2 class="section-title">Rate us:</h2>
+            <div class="rate-card">
+                <div class="rate-thanks" id="rateThanks" hidden>
+                    <p>Thanks for rating us!</p>
+                    <button type="button" class="rate-edit" id="rateEdit">Edit</button>
+                </div>
+
+                <form class="rate-form" id="rateForm">
+                    <fieldset class="stars">
+                        <legend class="visually-hidden">Your rating</legend>
+                        <input type="radio" name="rate" id="rate-5" value="5" required>
+                        <label for="rate-5" title="5 stars"><i class="fas fa-star"></i></label>
+                        <input type="radio" name="rate" id="rate-4" value="4">
+                        <label for="rate-4" title="4 stars"><i class="fas fa-star"></i></label>
+                        <input type="radio" name="rate" id="rate-3" value="3">
+                        <label for="rate-3" title="3 stars"><i class="fas fa-star"></i></label>
+                        <input type="radio" name="rate" id="rate-2" value="2">
+                        <label for="rate-2" title="2 stars"><i class="fas fa-star"></i></label>
+                        <input type="radio" name="rate" id="rate-1" value="1">
+                        <label for="rate-1" title="1 star"><i class="fas fa-star"></i></label>
+                    </fieldset>
+
+                    <p class="rate-message" id="rateMessage" aria-live="polite"></p>
+
+                    <div class="rate-fields" id="rateFields" hidden>
+                        <textarea name="comment" rows="4" placeholder="Describe your experience.." aria-label="Your experience"></textarea>
+                        <button type="submit" class="rate-submit">Post</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <site-footer></site-footer>
+</body>
+
+</html>
